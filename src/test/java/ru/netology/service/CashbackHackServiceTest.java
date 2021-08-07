@@ -16,16 +16,17 @@ public class CashbackHackServiceTest {
     }
 
     @Test
+    public void shouldReturnThousand() {
+        assertEquals(1000, service.remain(0));
+
+    }
+
+    @Test
     public void shouldReturnMax() {
         assertEquals(999,service.remain(1));
 
     }
 
-    @Test
-    public void shouldReturnThousand() {
-        assertEquals(1000, service.remain(0));
-
-    }
 
     @Test
     public void shouldReturnMin() {
